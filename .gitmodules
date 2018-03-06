@@ -11,8 +11,8 @@
 	path = bundle/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim.git
 [submodule "/home/pi/.vim/bundle/vim-airline-themes"]
-	path = /home/pi/.vim/bundle/vim-airline-themes
+	path = bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
 [submodule "/home/pi/.vim/bundle/vim-airline"]
-	path = /home/pi/.vim/bundle/vim-airline
+	path = bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
