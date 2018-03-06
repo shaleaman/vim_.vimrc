@@ -142,6 +142,7 @@ endif
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+let g:airline_powerline_fonts = 1  
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
