@@ -143,13 +143,20 @@ endif
 set foldcolumn=1
 
 let g:airline_powerline_fonts = 1  
-let g:tmuxline_powerline_separators = 0
+let g:tmuxline_powerline_separators = 1
 let g:airline#extensions#tmuxline#enabled = 1
-
-
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'b'    : '#W',
+      \'c'    : '#H',
+      \'win'  : '#I #W',
+      \'cwin' : '#I #W',
+      \'x'    : '%a',
+      \'y'    : '#W %R',
+      \'z'    : '#H'}
 " Tmux config auto
 "
-let g:tmuxline_preset = 'nightly_fox'
+" let g:tmuxline_preset = 'nightly_fox'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -162,10 +169,10 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-try
-    colorscheme railscasts
-catch
-endtry
+"try
+colorscheme railscasts
+"catch
+"endtry
 
 set background=dark
 

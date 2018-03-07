@@ -7,9 +7,6 @@
 [submodule "bundle/setcolors.vim"]
 	path = bundle/setcolors.vim
 	url = https://github.com/felixhummel/setcolors.vim.git
-[submodule "bundle/tmuxline.vim"]
-	path = bundle/tmuxline.vim
-	url = https://github.com/edkolev/tmuxline.vim.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
