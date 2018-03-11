@@ -145,16 +145,16 @@ let g:airline_powerline_fonts = 1
 syntax enable 
 
 " Enable 256 colors palette in Gnome Terminal
-if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
-endif
+" if $COLORTERM == 'gnome-terminal'
+"     set t_Co=256
+" endif
 
 "try
 colorscheme railscasts
 "catch
 "endtry
-
-set background=dark
+"
+let g:airline_theme="badcat"
 
 " Set extra options when running in GUI mode
 if has("gui_running")
