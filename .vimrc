@@ -155,7 +155,7 @@ colorscheme railscasts
 "catch
 "endtry
 "
-let g:airline_theme="badcat"
+let g:airline_theme="wombat"
 
 " Set extra options when running in GUI mode
 if has("gui_running")
