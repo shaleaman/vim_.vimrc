@@ -50,6 +50,7 @@ set history=500
 filetype plugin on
 filetype indent on
 
+" Enable airline theme plugin... for some reason
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -69,6 +70,17 @@ nmap <leader>w :w!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
+
+" Turn on the WiLd menu
+set wildmenu
+
+" Ignore compiled files
+set wildignore=*.o,*~,*.pyc
+if has("win16") || has("win32")
+    set wildignore+=.git\*,.hg\*,.svn\*
+else
+    set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
+endif
 
 "Always show current position
 set ruler
@@ -94,7 +106,6 @@ set foldcolumn=1
 let g:airline_powerline_fonts = 1
 let g:tmuxline_powerline_separators = 1
 let g:airline#extensions#tmuxline#enabled = 1
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
