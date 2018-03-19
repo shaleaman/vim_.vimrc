@@ -137,6 +137,7 @@ endif
 " Add a bit extra margin to the left
 set foldcolumn=1
 let g:airline_powerline_fonts = 1  
+let g:airline_theme="badcat"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -154,7 +155,6 @@ colorscheme railscasts
 "catch
 "endtry
 
-set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
